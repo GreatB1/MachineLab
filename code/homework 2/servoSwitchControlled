@@ -1,0 +1,72 @@
+#include <Servo.h>
+
+{
+  Servo servo;
+  int pos;
+  int increment;
+  int updateInterval;
+  unsigned long lastUpdate;
+
+public:
+  Sweeper(int interval)
+  {
+    updateInterval = interval;
+    increment = 1;
+    pos = 0;
+    lastUpdate = 0;
+  }
+
+  void Attach(int pin)
+  {
+    servo.attach(pin);
+  }
+
+  void Update()
+  {
+    if (millis() - lastUpdate >= updateInterval)
+    {
+      lastUpdate = millis();
+      pos += increment;
+      servo.write(pos);
+
+      if (pos >= 180 || pos <= 0)
+      {
+        increment = -increment;
+      }
+    }
+  }
+};
+
+/* =======================
+   Objects & Pins
+   ======================= */
+Sweeper sweeper(15);
+
+const int servoPin  = 9;
+const int switchPin = 2;
+
+/* =======================
+   Setup
+   ======================= */
+void setup()
+{
+  pinMode(switchPin, INPUT_PULLUP);  // momentary switch
+  sweeper.Attach(servoPin);
+}
+
+/* =======================
+   Loop
+   ======================= */
+void loop()
+{
+  // Button pressed = LOW (because of INPUT_PULLUP)
+  bool buttonPressed = (digitalRead(switchPin) == LOW);
+
+  if (buttonPressed)
+  {
+    // Servo sweeps only while button is pressed
+    sweeper.Update();
+  }
+  // If button is not pressed, Update() is not called,
+  // so the servo stops sweeping
+}
