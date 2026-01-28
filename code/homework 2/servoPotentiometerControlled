@@ -1,0 +1,148 @@
+#include <Servo.h>
+
+/* =======================
+   Flasher Class
+   ======================= */
+class Flasher
+{
+  int ledPin;
+  long OnTime;
+  long OffTime;
+
+  int ledState;
+  unsigned long previousMillis;
+
+public:
+  Flasher(int pin, long on, long off)
+  {
+    ledPin = pin;
+    pinMode(ledPin, OUTPUT);
+
+    OnTime = on;
+    OffTime = off;
+
+    ledState = LOW;
+    previousMillis = 0;
+  }
+
+  void Update()
+  {
+    unsigned long currentMillis = millis();
+
+    if (ledState == HIGH && currentMillis - previousMillis >= OnTime)
+    {
+      ledState = LOW;
+      previousMillis = currentMillis;
+      digitalWrite(ledPin, ledState);
+    }
+    else if (ledState == LOW && currentMillis - previousMillis >= OffTime)
+    {
+      ledState = HIGH;
+      previousMillis = currentMillis;
+      digitalWrite(ledPin, ledState);
+    }
+  }
+};
+
+/* =======================
+   Sweeper Class
+   ======================= */
+class Sweeper
+{
+  Servo servo;
+  int pos;
+  int increment;
+  int updateInterval;
+  unsigned long lastUpdate;
+
+public:
+  Sweeper(int interval)
+  {
+    updateInterval = interval;
+    increment = 1;
+    pos = 0;
+    lastUpdate = 0;
+  }
+
+  void Attach(int pin)
+  {
+    servo.attach(pin);
+  }
+
+  void SetSpeed(int interval)
+  {
+    updateInterval = interval;
+  }
+
+  void Update()
+  {
+    if (millis() - lastUpdate >= updateInterval)
+    {
+      lastUpdate = millis();
+      pos += increment;
+      servo.write(pos);
+
+      if (pos >= 180 || pos <= 0)
+      {
+        increment = -increment;
+      }
+    }
+  }
+};
+
+/* =======================
+   Objects
+   ======================= */
+Flasher led1(11, 123, 400);
+Flasher led2(12, 350, 350);
+Flasher led3(13, 200, 222);
+
+Sweeper sweeper1(15);
+Sweeper sweeper2(25);
+
+/* =======================
+   Pins
+   ======================= */
+const int switchPin = 2;
+const int potPin    = A0;
+
+/* =======================
+   Setup
+   ======================= */
+void setup()
+{
+  Serial.begin(9600);
+
+  pinMode(switchPin, INPUT_PULLUP);
+
+  sweeper1.Attach(9);
+  sweeper2.Attach(10);
+}
+
+/* =======================
+   Loop
+   ======================= */
+void loop()
+{
+  // LEDs always run
+  led1.Update();
+  led2.Update();
+  led3.Update();
+
+  // Read switch (active LOW)
+  bool servoEnabled = (digitalRead(switchPin) == LOW);
+
+  if (servoEnabled)
+  {
+    // Pot only affects servos when enabled
+    int potValue = analogRead(potPin);
+    int speed = map(potValue, 0, 1023, 50, 5);
+
+    sweeper1.SetSpeed(speed);
+    sweeper2.SetSpeed(speed);
+
+    sweeper1.Update();
+    sweeper2.Update();
+  }
+  // else: servos simply stop updating
+}
