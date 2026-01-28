@@ -114,5 +114,3 @@ void loop()
   led2.Update();
   led3.Update();
 }
-
-
