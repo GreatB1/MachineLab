@@ -35,7 +35,7 @@ Image 2
 - In the second module, the motor was not working at all. To debug this, a multimeter could be used to assess whether the circuit is complete or incomplete. If complete, then the motor might be damaged, but if the circuit is incomplete, then there might be some faulty wires or connections in the circuit.
 - The third module worked mostly fine, with the only uncertainty being with the rotating tree since its rotation was not smooth. It might therefore be hard to know whether it's malfunctioning or perhaps working as intended. Additionally, the motor was hidden away in a way that made it difficult to easily debug where the problem was. This could have been made easier if a hinge or sliding mechanism had been used to close the compartment where the motor was kept, allowing for easy access during assessment and debugging.
 
-- In the fourth module, the only main issue was that the conveyor belt at the back was not functional.
+- In the fourth module, the only main issue was that the conveyor belt at the back was not functional. This could be due to an error in the code or in the circuit connection.
 
 - The last module (Ferris wheel) worked only when it was pushed slightly inwards. It turned out that the issue was a loose mechanical connection between the Ferris wheel and the driving motor, which could have been fixed by adding extra srews for more strength. 
 
