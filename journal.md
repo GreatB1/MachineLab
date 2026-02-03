@@ -25,7 +25,23 @@ Image 2
   
 ## [Homework 3](https://github.com/michaelshiloh/MachineLab/blob/master/homework.md#homework-due-tuesday-3-february-2026) 
 
-### Game Choice
+### 1. Last yr's project
+
+<img width="904" height="542" alt="image" src="https://github.com/user-attachments/assets/daa28588-059f-4333-a42b-d56b9e544387" />
+
+### »» What's working, what isn't, debugging & possible improvements
+
+- In the first module (leftmost), the servo motors that moved the blue-colored boards, which represent water, worked nicely. I liked how springs were used to pull the boards back to their initial position, which eliminated the need for additional servo motors. However, the boat wasn't securely mounted, which led to inconsistent movement and sometimes no movement at all. This could have been fixed by adding a third screw or using nuts to securely hold the screws.
+- In the second module, the motor was not working at all. To debug this, a multimeter could be used to assess whether the circuit is complete or incomplete. If complete, then the motor might be damaged, but if the circuit is incomplete, then there might be some faulty wires or connections in the circuit.
+- The third module worked mostly fine, with the only uncertainty being with the rotating tree since its rotation was not smooth. It might therefore be hard to know whether it's malfunctioning or perhaps working as intended. Additionally, the motor was hidden away in a way that made it difficult to easily debug where the problem was. This could have been made easier if a hinge or sliding mechanism had been used to close the compartment where the motor was kept, allowing for easy access during assessment and debugging.
+
+- In the fourth module, the only main issue was that the conveyor belt at the back was not functional.
+
+- The last module (Ferris wheel) worked only when it was pushed slightly inwards. It turned out that the issue was a loose mechanical connection between the Ferris wheel and the driving motor, which could have been fixed by adding extra srews for more strength. 
+
+
+
+### 2. Game Choice
 
 I am thinking of exploring a physical reinterpretation of a 2D platformer video game, such as Mario. The project draws inspiration from classic side-scrolling games that rely on simple mechanics such as jumping, timing, and obstacle avoidance. Rather than presenting the game on a digital screen, the goal is to translate the logic of a platformer into a mechanical system.
 
