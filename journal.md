@@ -70,3 +70,14 @@ A small-scale mechanical setup consisting of:
 
 ### Mechanical Activation 
 Instead of using a digital display, the game world is represented physically using a small conveyor belt. Obstacles are attached to the belt and move toward the player, simulating the scrolling motion of a platformer. The player character is represented by a vertically moving platform constrained by guide rails and activated through a spring-based input. The rails restrict the motion to a controlled vertical path, preventing unintended movement while maintaining a physical sense of jumping.
+
+## [Homework 4](https://github.com/michaelshiloh/MachineLab/blob/master/homework.md#homework-due-thursday-5-february-2026) 
+Conveyor belt mechanism
+
+<img width="880" height="620" alt="image" src="https://github.com/user-attachments/assets/06332a77-27c8-4f72-8d20-79410707c855" />
+
+
+
+<img width="824" height="468" alt="image" src="https://github.com/user-attachments/assets/d4bf1e33-0769-4727-8188-133c5f1c2677" />
+
+
