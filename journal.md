@@ -65,7 +65,7 @@ A small-scale mechanical setup consisting of:
 - A stationary player position centered above or beside the belt, with a spring mechanism to enable the player to jump when a button is pressed
 - Vertical rails to support the player and prevent jumping off
 
-<img width="824" height="642" alt="image" src="https://github.com/user-attachments/assets/5c350f6d-4e10-4a0c-9318-97f91b6999bc" />
+<img width="880" height="642" alt="image" src="https://github.com/user-attachments/assets/5c350f6d-4e10-4a0c-9318-97f91b6999bc" />
 
 
 ### Mechanical Activation 
@@ -78,6 +78,53 @@ Conveyor belt mechanism
 
 
 
-<img width="824" height="468" alt="image" src="https://github.com/user-attachments/assets/d4bf1e33-0769-4727-8188-133c5f1c2677" />
+<img width="880" height="468" alt="image" src="https://github.com/user-attachments/assets/d4bf1e33-0769-4727-8188-133c5f1c2677" />
+
+
+## [Homework 5](https://github.com/michaelshiloh/MachineLab/blob/master/homework.md#homework-due-tuesday-10-february-2026) 
+
+
+### Objective
+
+The goal of this lab was to complete the DC motor control exercise started in class using an Arduino and an L298N motor driver module. The task required controlling both the **speed** and **direction** of a DC motor. Speed control was achieved using PWM (Pulse Width Modulation), and direction control was managed using the H-Bridge functionality built into the L298N module. We used the HowToMechatronics tutorial as a reference during this activity.
+
+
+### Overview of the System
+
+The Arduino sends a PWM signal to the ENA pin of the L298N to control motor speed. By adjusting the duty cycle of the PWM signal, the average voltage delivered to the motor changes, which directly affects its speed.
+
+Motor direction is controlled using the IN1 and IN2 pins on the L298N. By setting these pins HIGH or LOW in different combinations, the current flowing through the motor is reversed, which changes the direction of rotation.
+
+
+### Schematic
+<img width="880" height="489" alt="image" src="https://github.com/user-attachments/assets/e3b0c5f3-377f-42d7-ad85-d0638cbdf341" />
+
+### Physical Setup
+<img width="880" height="525" alt="image" src="https://github.com/user-attachments/assets/b23652c6-e868-4c1c-94ac-0a0048e46f9c" />
+
+### Code
+The Arduino code used can be found [here](https://github.com/GreatB1/MachineLab/blob/main/code/Homework%205.m). 
+
+### Results
+
+After completing the wiring and programming, the motor operated successfully. The potentiometer allowed smooth adjustment of motor speed, and the pushbutton reliably changed the motor’s direction. The system responded consistently to input changes and demonstrated proper PWM-based speed control.
+
+
+### Issues Encountered and Fixes
+
+One issue I encountered was that the motor did not spin when I first powered the circuit. After checking the wiring, I realized that the ENA pin was not properly connected to a PWM-capable pin on the Arduino. Because PWM is required to control speed, the motor was not receiving the correct control signal. I corrected the wiring by connecting ENA to a proper PWM pin, and the motor began functioning as expected.
+
+Another problem occurred at low speed settings. When the potentiometer was turned down to very low values, the motor would make a buzzing sound but would not rotate. This happened because the PWM signal was too low to provide enough starting torque for the motor. To fix this, I adjusted the minimum PWM value in the program so the motor would always receive enough power to start turning. After this adjustment, the motor ran more reliably across the speed range.
+
+I also experienced inconsistent direction changes when pressing the pushbutton. Sometimes the motor would switch directions multiple times with a single press. This was caused by button bounce, which is a common issue with mechanical switches. To resolve this, I added a small delay in the code to debounce the button input. After implementing this fix, the direction toggled correctly with each press.
+
+Additionally, I initially had a grounding issue where the Arduino and motor driver did not share a common ground. This caused unpredictable behavior in the motor’s response. Once I connected the grounds together, the system stabilized and operated consistently.
+
+
+### Conclusion
+
+This lab helped reinforce my understanding of PWM and H-Bridge motor control. I successfully implemented speed and direction control of a DC motor using an Arduino and L298N module. Troubleshooting wiring errors, PWM limitations, grounding issues, and button debounce problems improved my debugging skills and strengthened my understanding of practical motor control systems.
+
+
 
 
