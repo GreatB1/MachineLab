@@ -188,8 +188,6 @@ Initially, we attempted to construct the support structure using cardboard and a
 
  We also used L-brackets to constrain the nut while allowing the threaded rod to rotate freely. 
  This successfully enabled rotational-to-linear motion conversion.
-
- <img width="680" height="425" alt="image" src="https://github.com/user-attachments/assets/a6deb8cf-5443-4189-a111-265e677a6d28" />
  <img width="680" height="425" alt="image" src="https://github.com/user-attachments/assets/acdf5bd9-98ff-4218-801d-1982211c0979" />
 
  The mechanism functioned as intended; the carriage moved vertically in response to motor rotation.
