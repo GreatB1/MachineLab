@@ -76,9 +76,11 @@ Conveyor belt mechanism
 
 <img width="880" height="620" alt="image" src="https://github.com/user-attachments/assets/06332a77-27c8-4f72-8d20-79410707c855" />
 
-
+Source [Easy HomeMade Projects](https://www.youtube.com/watch?v=qoejrZhn5XI)
 
 <img width="880" height="468" alt="image" src="https://github.com/user-attachments/assets/d4bf1e33-0769-4727-8188-133c5f1c2677" />
+
+Source [thingiverse.com](https://www.thingiverse.com/thing:2838888/comments)
 
 
 ## [Homework 5](https://github.com/michaelshiloh/MachineLab/blob/master/homework.md#homework-due-tuesday-10-february-2026) 
