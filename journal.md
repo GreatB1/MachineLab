@@ -214,7 +214,23 @@ More importantly, the process revealed key engineering insights: motion design m
 
 Overall, this iteration provided a strong proof of concept and a clear direction for refinement. Our next step will be improving structural stability and integrating guidance systems to achieve smoother, more controlled vertical movement.
 
+## [Homework due at our second individual meeting (April 9)](https://github.com/michaelshiloh/MachineLab/blob/master/homework.md#homework-due-at-our-second-individual-meeting-april-9-12)
+During the individual meeting, we discussed how the project would proceed following the transition to online classes. Given the limitations in access to shared tools, workspace, and materials, the focus was on adapting the project to be feasible for independent work at home.
 
+I decided to continue with the original Flappy Bird–inspired concept, but to scale it down into a smaller and simpler version. Instead of building the full multi-mechanism system, I will focus on a reduced setup that still demonstrates the core motion principles, making it more manageable within current constraints.
 
+We also discussed access to tools and materials. Since I no longer have access to the lab, I plan to source the required components independently, including basic materials from local hardware stores and any specialized parts from online retailers.
 
+### Next Steps:
+Finalize the simplified design scope and begin acquiring materials needed to start building the individual prototype.
+
+## [Homework due at our third individual meeting (April 16)](https://github.com/michaelshiloh/MachineLab/blob/master/homework.md#homework-due-at-our-third-individual-meeting-april-13--19)
+Following the individual meeting, I proceeded with sourcing the materials required to begin building my simplified version of the Flappy Bird–inspired mechanism. I was able to obtain the key components needed for prototyping, including a DC motor, a 12V power adapter, a hot glue gun, and basic construction materials.
+
+Having access to these components allowed me to move from planning into execution. I reviewed my earlier prototype ideas, particularly the conveyor belt and vertical motion mechanisms, and began considering how to adapt them into a more compact and manageable system that can be built at home.
+
+At this stage, no full mechanism has been assembled yet, but the preparation phase is complete. I now have the necessary tools and materials to begin construction and testing.
+
+### Next Steps:
+Start building the first working mechanism (likely the conveyor system or vertical motion prototype) and test basic motor-driven movement.
 
