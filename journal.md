@@ -1,4 +1,4 @@
-<img width="227" height="222" alt="image" src="https://github.com/user-attachments/assets/08af8b9e-06e5-4c92-8296-74a1180ff16c" />## [Homework 2](https://github.com/michaelshiloh/MachineLab/blob/master/homework.md#homework-due-thursday-29-january-2026)
+## [Homework 2](https://github.com/michaelshiloh/MachineLab/blob/master/homework.md#homework-due-thursday-29-january-2026)
 
 ### Process Overview
 
@@ -285,8 +285,14 @@ This approach allows me to:
 - Prototype and test different cam profiles  
 - Build and integrate the sorting flap mechanism  
 
-### Media (To be added)
+### Media
 
-![Conveyor Prototype](link_here)
-![Cam Sketch](link_here)
+<img width="227" height="222" alt="image" src="https://github.com/user-attachments/assets/73720676-fae2-4376-ba7d-2ce56ebc6a56" />
+
+Source ([Chegg.com](https://learn.adafruit.com/cam-follower-automaton/build-the-mechanism))
+
+<img width="280" height="180" alt="image" src="https://github.com/user-attachments/assets/018f598a-8f4f-4f41-b226-f08d456fe1b0" />
+
+Source (Chegg.com)
+
 
