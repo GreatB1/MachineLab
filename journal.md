@@ -1,4 +1,4 @@
-## [Homework 2](https://github.com/michaelshiloh/MachineLab/blob/master/homework.md#homework-due-thursday-29-january-2026)
+<img width="227" height="222" alt="image" src="https://github.com/user-attachments/assets/08af8b9e-06e5-4c92-8296-74a1180ff16c" />## [Homework 2](https://github.com/michaelshiloh/MachineLab/blob/master/homework.md#homework-due-thursday-29-january-2026)
 
 ### Process Overview
 
@@ -233,4 +233,60 @@ At this stage, no full mechanism has been assembled yet, but the preparation pha
 
 ### Next Steps:
 Start building the first working mechanism (likely the conveyor system or vertical motion prototype) and test basic motor-driven movement.
+
+## Change of project direction
+Following my earlier consideration of shifting away from the Flappy Bird–inspired project, I finalized my decision to develop a **mechanical, motor-driven sorting system**. The goal is to create a complete, self-contained machine that demonstrates coordinated motion using multiple mechanisms rather than a single isolated component.
+
+### Project Concept
+
+The project will be a **motorized conveyor system with a timed mechanical sorting mechanism**. Objects placed on the conveyor will move forward continuously and interact with a secondary mechanism that redirects or allows them to pass based on timing.
+
+Unlike sensor-based systems, this design will rely entirely on **mechanical synchronization**. A single motor will drive both the conveyor belt and a cam mechanism, ensuring that motion and interaction are inherently coordinated.
+
+### System Overview
+
+The system consists of three main subsystems:
+
+- **Conveyor Belt System**  
+  A continuous loop made from flexible cardboard, driven by a motorized roller. This transports objects horizontally across the frame.
+
+- **Cam Mechanism (Timing Control)**  
+  A rotating cam attached to the motor shaft. This converts continuous rotation into periodic motion.
+
+- **Sorting Mechanism (Flap/Lever)**  
+  A lever or flap connected to the cam follower. At specific intervals, the cam pushes the lever into the conveyor path, redirecting objects off the belt.
+
+### Implementation Plan
+
+1. Build and refine the conveyor system (based on previous prototype).
+2. Design and attach a cam to the motor shaft.
+3. Create a follower mechanism to translate cam motion into linear movement.
+4. Connect the follower to a flap that interacts with objects on the conveyor.
+5. Add output paths (straight vs diverted)
+
+### Key Design Considerations
+
+- **Friction & Grip:** Ensuring sufficient contact between belt and rollers (previously improved using bends in the cardboard).
+- **Alignment:** Maintaining parallel rollers to prevent belt drift.
+- **Timing:** Synchronizing conveyor speed and cam rotation for consistent interaction.
+- **Structural Stability:** Reinforcing the frame to reduce wobbling.
+
+### Why This Direction
+
+This approach allows me to:
+- Build a **complete mechanical system** rather than a single mechanism  
+- Demonstrate **multiple motion types** (continuous + reciprocating)  
+- Explore **cause-and-effect relationships** without relying on electronics  
+- Work within the constraints of available materials and tools  
+
+### Next Steps
+
+- Begin constructing the refined conveyor system  
+- Prototype and test different cam profiles  
+- Build and integrate the sorting flap mechanism  
+
+### Media (To be added)
+
+![Conveyor Prototype](link_here)
+![Cam Sketch](link_here)
 
