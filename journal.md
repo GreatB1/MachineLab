@@ -282,8 +282,7 @@ This approach allows me to:
 ### Next Steps
 
 - Begin constructing the refined conveyor system  
-- Prototype and test different cam profiles  
-- Build and integrate the sorting flap mechanism  
+- Prototype and test different cam profiles    
 
 ### Media
 
@@ -295,4 +294,55 @@ Source ([Chegg.com](https://learn.adafruit.com/cam-follower-automaton/build-the-
 
 Source (Chegg.com)
 
+## April 21, 2026 – Conveyor System Build & Iteration
 
+I began constructing the conveyor system as the base of my mechanical sorting project. The goal was to create a stable, motor-driven belt capable of continuous horizontal motion using simple, accessible materials.
+
+### Build Process
+
+The structure was made primarily from cardboard, with two DC motors used to drive the system. For the belt, I initially attempted to use cardboard, but it proved too rigid and did not bend smoothly around the rollers. To solve this, I created a belt using masking tape looped onto itself, forming a flexible, continuous, non-sticky surface. This worked significantly better, allowing smooth motion around the rollers.
+
+For the rollers, I used pens as cylindrical supports. This was an effective low-cost solution, as they provided a smooth surface and consistent shape for the belt to rotate around.
+
+
+### Challenges & Fixes
+
+One major issue was the lack of flexibility in the initial cardboard belt, which caused poor motion and resistance. Switching to a masking tape belt resolved this by improving flexibility and reducing friction during rotation.
+
+Another issue occurred when using a single motor. The belt would frequently get stuck or move inconsistently, likely due to uneven force distribution and friction along the system. To address this, I added a second motor on the opposite roller. This significantly improved motion, as both ends of the belt were now actively driven, reducing strain and preventing stalling.
+
+
+### Design Modifications
+
+To improve balance and stability, I positioned the two motors on alternate sides of the structure. This helped distribute weight more evenly and prevented the system from tipping to one side.
+
+The use of pens as rollers was also an effective modification, providing a simple and functional alternative to manufactured components.
+
+
+### Observations & Learning
+
+This iteration highlighted the importance of material selection in dynamic systems. Flexibility, friction, and alignment all play a critical role in achieving smooth motion. It also demonstrated how distributing force (using two motors) can significantly improve system reliability.
+
+Overall, the conveyor system now runs more consistently and provides a solid foundation for integrating the next stage of the project: the cam-driven sorting mechanism.
+
+## Media
+<img width="880" height="489" alt="20260422_175305" src="https://github.com/user-attachments/assets/f1925384-863b-4ce6-9931-41e02019f1f4" />
+---
+
+<img width="480" height="489" alt="20260422_193310" src="https://github.com/user-attachments/assets/c1c472d5-3faa-484d-8493-6f2691fa3c8b" />
+---
+
+<img width="480" height="489" alt="20260422_190811" src="https://github.com/user-attachments/assets/260ab123-ce02-493c-8227-3c539f1a8049" />
+
+https://github.com/user-attachments/assets/5ffdfbdb-2c62-40de-a0e0-2bb919200b2f
+
+https://github.com/user-attachments/assets/42762657-4d8d-46dd-ba18-a0dde389d785
+
+https://github.com/user-attachments/assets/c2204953-a7e1-4848-960f-fef58c86c8c2
+
+
+### Next Steps
+
+- Refine belt alignment and tension  
+- Begin designing and testing the cam mechanism  
+- Integrate a sorting flap into the system  
