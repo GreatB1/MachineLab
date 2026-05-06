@@ -346,3 +346,163 @@ https://github.com/user-attachments/assets/c2204953-a7e1-4848-960f-fef58c86c8c2
 - Refine belt alignment and tension  
 - Begin designing and testing the cam mechanism  
 - Integrate a sorting flap into the system  
+
+## April 25, 2026 – Cam Mechanism Build & Integration
+
+I began developing the cam mechanism to introduce timed interaction into the conveyor system. The goal was to convert the motor’s continuous rotational motion into a periodic movement that could push objects off the conveyor belt.
+
+### Build Process
+
+The cam was constructed using cardboard. Instead of adding a bump, I created an **eccentric cam** by cutting a circular disk with an off-center hole and mounting it onto a pen shaft. This offset caused the cam to rotate unevenly, generating a periodic displacement as it turned.
+
+<img width="480" height="489" alt="20260430_200255" src="https://github.com/user-attachments/assets/27a1d86c-4a75-42f3-8fef-169300c7c66d" />
+
+A follower and flap mechanism were then added. The flap was horizontally positioned next to the conveyor so that it could interact with objects as they passed. To ensure the flap returned to its original position after being pushed by the cam, I used a rubber band as a restoring force. This allowed the system to repeatedly cycle without requiring additional components.
+
+<img width="480" height="489" alt="20260506_155050" src="https://github.com/user-attachments/assets/59671aa5-7578-48d3-ae84-4b8301b39fc9" />
+
+--
+<img width="480" height="489" alt="20260430_201742" src="https://github.com/user-attachments/assets/fe715c15-a127-4abb-a1ca-381303a5a3f3" />
+
+--
+<img width="480" height="489" alt="20260430_204214" src="https://github.com/user-attachments/assets/cc93ebc0-2583-4b63-b274-b260cc75d6d5" />
+
+
+https://github.com/user-attachments/assets/9c0e6cae-d7ec-4930-bd0d-93abd9c53a8c
+
+### Challenges & Fixes
+
+One of the main challenges was adapting the mechanism to work **sideways**, so that the motion could push objects off the conveyor rather than simply move vertically. Initially, the cam motion did not effectively translate into lateral movement. This was resolved by adjusting the orientation of the follower and flap, ensuring that the cam’s displacement was redirected horizontally into the path of the moving objects.
+
+Another challenge was ensuring the flap returned consistently after each cycle. Without a restoring force, the flap would remain displaced after being pushed. The addition of a rubber band solved this issue by pulling the flap back into its default position, allowing continuous operation.
+
+### Observations & Learning
+
+This stage demonstrated how rotational motion can be effectively converted into directional mechanical interaction using a simple cam system. The use of an eccentric cam provided a compact and reliable way to generate periodic motion without complex geometry.
+
+I also learned that **orientation of motion is critical** — simply generating movement is not sufficient; it must be directed appropriately to achieve the intended interaction. Additionally, introducing a restoring force (rubber band) is essential for cyclic mechanisms to function continuously.
+
+### Current Status
+
+The cam mechanism is now functional and capable of producing timed lateral motion. It can be integrated with the conveyor system to begin testing object interaction and sorting behavior.
+
+
+### Next Steps
+
+- Integrate cam mechanism with the conveyor system  
+- Test timing between conveyor movement and flap actuation  
+- Adjust cam offset and flap position for more reliable interaction
+
+## April 30, 2026 – System Integration & Timing Control
+
+I integrated the cam mechanism with the conveyor system to create a fully functional, interactive setup. The objective was to synchronize the motion of the conveyor with the cam-driven flap so that objects could be selectively pushed off the belt.
+
+### Integration Process
+
+The cam mechanism was mounted alongside the conveyor, with the flap positioned at a point where objects pass consistently. Since both the conveyor and cam are motor-driven, the system naturally produces periodic interaction based on rotation.
+
+To improve control over timing, I introduced a **manual switch** to control the cam mechanism independently. This allowed me to activate the cam at specific moments, ensuring that the flap would hit objects more reliably as they moved along the conveyor.
+
+<img width="480" height="489" alt="Screenshot_20260506_164415_Gallery" src="https://github.com/user-attachments/assets/7a13c1cb-178c-4cfb-8e34-9627e1087ad9" />
+
+https://github.com/user-attachments/assets/40f7b0a4-fdbd-4815-aa9f-78330305536b
+
+### Challenges & Fixes
+
+A key challenge during integration was achieving correct timing between the moving objects and the flap motion. When both systems ran continuously without control, the flap would often miss the objects. By adding a switch, I was able to manually control when the cam engages, improving accuracy.
+
+Another issue was positioning. The flap needed to be precisely aligned with the conveyor path to ensure consistent interaction. This required adjusting both the height and horizontal placement of the mechanism.
+
+### Observations & Learning
+
+This stage demonstrated the importance of **timing and control in multi-mechanism systems**. While the cam provides periodic motion, introducing a switch allowed for more precise interaction, effectively bridging mechanical motion with user control.
+
+I also observed that even with a working mechanism, system performance depends heavily on alignment and synchronization between components.
+
+### Current Status
+
+The system is now capable of:
+- Moving objects along the conveyor  
+- Activating the cam mechanism on demand  
+- Successfully pushing objects off the belt  
+
+This represents a complete working prototype of a **mechanical sorting system with controlled interaction**.
+
+### Next Steps
+
+- Refine timing for more consistent sorting  
+- Improve structural stability and alignment  
+- Document final system with images and video
+
+## May 5, 2026 – Final Presentation & Reflection
+
+### Project Overview
+
+For my final project, I developed a **motor-driven mechanical sorting system** consisting of a conveyor belt and a cam-based interaction mechanism. Objects move along the conveyor and are selectively pushed off using a timed flap driven by an eccentric cam.
+
+This project evolved from an initial Flappy Bird–inspired concept into a more focused **mechanism-based system**, allowing me to work effectively within the constraints of building individually at home.
+
+
+### Adapting to Constraints
+
+Due to the shift to remote work, I needed to redesign the project to match available tools and materials. Instead of attempting a complex multi-system build, I focused on creating a **compact, functional mechanical system** using:
+
+- Cardboard for structure  
+- Masking tape for the belt  
+- Pens as rollers  
+- DC motors for motion  
+- A rubber band for restoring force  
+
+This constraint-driven approach pushed me to prioritize **simplicity, functionality, and adaptability** in my design.
+
+
+### Key Development Stages
+
+1. **Conveyor Prototype**  
+   - Initial cardboard belt failed due to lack of flexibility  
+   - Replaced with masking tape loop → improved motion  
+   - Added second motor to resolve stalling issues  
+
+
+2. **Cam Mechanism**  
+   - Built eccentric cam using off-center hole
+   - Converted rotational motion into periodic movement  
+   - Added rubber band to reset flap  
+
+3. **System Integration**  
+   - Combined conveyor and cam system  
+   - Introduced a switch to manually control timing  
+   - Achieved consistent object interaction  
+
+### Challenges & Solutions
+
+- **Belt rigidity** → Switched from cardboard to masking tape  
+- **Motor stalling** → Added second motor for balanced drive  
+- **Directional motion (sideways pushing)** → Reoriented flap and follower  
+- **Lack of reset mechanism** → Introduced rubber band  
+- **Timing mismatch** → Added switch for manual control  
+
+Each challenge required either a **design modification** or a **material change**, reinforcing the importance of iteration.
+
+
+### Lessons Learned
+
+**Technical:**
+- Material properties (flexibility, friction) directly affect system performance  
+- Alignment and force distribution are critical in moving systems  
+- Simple mechanisms (like cams) can replace complex control systems  
+
+**Conceptual:**
+- Constraints can guide better design decisions rather than limit them  
+- Breaking a complex idea into smaller systems improves feasibility  
+- Iteration is essential - initial designs rarely work as intended  
+
+**Practical:**
+- Readily available materials can be highly effective when used creatively  
+- Mechanical timing can substitute for electronic control in certain systems  
+
+### Final Reflection
+
+This project successfully demonstrates a **complete mechanical system** where multiple components work together to produce controlled motion and interaction. 
+
+What began as a game-inspired idea evolved into a **mechanism-focused design**, emphasizing problem-solving, adaptability, and engineering fundamentals. The process of building, testing, failing, and refining was the most valuable part of the project.
