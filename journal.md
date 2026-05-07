@@ -355,7 +355,7 @@ I began developing the cam mechanism to introduce timed interaction into the con
 
 The cam was constructed using cardboard. Instead of adding a bump, I created an **eccentric cam** by cutting a circular disk with an off-center hole and mounting it onto a pen shaft. This offset caused the cam to rotate unevenly, generating a periodic displacement as it turned.
 
-<img width="480" height="489" alt="20260430_200255" src="https://github.com/user-attachments/assets/27a1d86c-4a75-42f3-8fef-169300c7c66d" />
+<img width="270" height="489" alt="20260430_200255" src="https://github.com/user-attachments/assets/27a1d86c-4a75-42f3-8fef-169300c7c66d" />
 
 A follower and flap mechanism were then added. The flap was horizontally positioned next to the conveyor so that it could interact with objects as they passed. To ensure the flap returned to its original position after being pushed by the cam, I used a rubber band as a restoring force. This allowed the system to repeatedly cycle without requiring additional components.
 
